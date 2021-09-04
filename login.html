@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/dist/style.css">
+</head>
+<body class="text-capitalize">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">attendance system</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 mb-2 mb-lg-0 d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="profile" class="nav-link" href="/profile.html">profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="admin" class="nav-link" href="/admin.html">admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="logout" class="nav-link bg-success fw-bold  rounded mx-auto text-center" href="/login.html">log out</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="login" class="nav-link bg-success fw-bold  rounded mx-auto text-center" href="/login.html">sign up / log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <!-- <form action="" class="form-control"> -->
+            <h3 class="h2 text-center bg-dark text-light py-3 ">form</h3>
+            <div class="container border-info border-1 border py-2">
+                <div class="logregbtns">
+                    <div class="row justify-content-around text-center">
+                        <div class="col-12 col-sm-6 mb-2">
+                            <button class="logreg btn btn-outline-primary w-100 py-2">registeration form</button>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-2">
+                            <button class="logreg btn btn-outline-primary w-100 py-2 active">login form</button>
+                        </div>
+                    </div>
+                    <div class="formdisplay regform d-none">
+                        <form class="row g-3 needs-validation" method="POST" novalidate>
+                            <div class="col-12 position-relative">
+                                <label for="fname" class="form-label">First name</label>
+                                <input type="text" class="form-control" minlength="3" id="fname" required>
+                                <div class="invalid-feedback">
+                                    First name required more than 3 characters
+                                </div>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <label for="lname" class="form-label">Last name</label>
+                                <input type="text" class="form-control" minlength="3" id="lname"  required>
+                                <div class="invalid-feedback">
+                                    Last name required more than 3 characters
+                                </div>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <label for="email" class="form-label">email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    email required and don't use ur email twice
+                                </div>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" minlength="3" id="address" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city more than 3 characters
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 position-relative mb-3">
+                                <label for="age" class="form-label">Age</label>
+                                <input type="number" min="18" max="70" class="form-control" id="age" required>
+                                <div class="invalid-feedback">
+                                    Please provide a min age 17 and max age 70.
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button class="btn btn-primary w-100" type="submit">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="formdisplay logform">
+                        <form class="row g-3 needs-validation" action="/admin.html" novalidate>
+                            <div class="col-12 position-relative">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="usernamePrepend">@</span>
+                                    <input type="text" class="form-control" id="username" aria-describedby="usernamePrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your valid username.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 position-relative mb-3">
+                                <label for="userpassword" class="form-label">password</label>
+                                <input type="password" class="form-control" id="userpassword" required>
+                                <div class="invalid-feedback">
+                                    Please enter your password.
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button class="btn btn-primary w-100" type="submit">Log In</button>
+                            </div>
+                            <p id="warning-msg" class="lead text-center text-danger d-none">
+                                you should enter your valid username and password !!!
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <!-- </form> -->
+    </div>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/log.js"></script>
+</body>
+</html>

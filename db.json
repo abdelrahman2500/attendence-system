@@ -1,0 +1,26 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fname": "abdelrahman",
+      "lname": "khalid",
+      "email": "ab@gm",
+      "username": "admin",
+      "password": "admin",
+      "city": "mansoura",
+      "age": 26,
+      "flag": 1
+    },
+    {
+      "fname": "mahmoud",
+      "lname": "metwally",
+      "username": "mahmoudmetwally630623",
+      "password": "Me69783",
+      "email": "a@a.a",
+      "address": "cairo",
+      "age": "23",
+      "flag": 0,
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+attendence system by pure javascript 
+
+1- run json-server -w db.json --port 3000
+2- run json-server -w reports.json --port 3001
+
+3- register ==> you will recieve an unique username and password in your email
+
+4- login with username and password you have recieved
+
+5- if you admin >> login with username : admin and password : admin
+
+6- proving attendence is allowed for one hour in the day 
+   any time else , you can't make attendence	
+   you can handle start and end time from home.js 
+
+7- after a half hour from start you are late
+8- after an hour from start you are absense
+
+9- any employee can show his only report
+10- admin can show all employees' reports and information
+
+note that >>> system isn't secure enough.
+
+note >>> use admin anytime  
